@@ -13,12 +13,4 @@ export class DatabaseService {
   getAll(){
     return this.http.get(URL)
   }
-
-/*
-METODO CON JSON
-  //creacion de metodos para hacer uso de ellos
-  GetAll(){
-    return this.http.get(URL_EMPLEADOS)
-  }
-}*/
 }

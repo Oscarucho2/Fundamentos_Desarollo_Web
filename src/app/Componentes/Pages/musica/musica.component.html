@@ -1,1 +1,21 @@
-<p>musica works!</p>
+<section class="festivales">
+    <div class="titulo">
+        <h1 class="fest">Verano 2022: ¡han vuelto los festivales!</h1>
+    </div>
+
+    <div class="imagenes">
+        <img src="https://www.lacupulamusic.com/blog/wp-content/uploads/2022/06/Festivales-verano-2022.jpg" alt="">
+    </div>
+
+    <div class="CARDS">
+        <div class="card" style="width: 18rem;" *ngFor="let item of databaseList">
+            <img src={{item.img}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{item.titulo}}</h5>
+                <p class="card-text">{{item.texto}}</p>
+                <a href="" class="btn btn-primary">Leer más</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+</section>

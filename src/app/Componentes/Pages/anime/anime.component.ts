@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DatabaseService} from '../../../../service/database.service'
+import {DatabaseService} from 'src/service/database.service';
 import {Route} from '@angular/router';
 
 @Component({
@@ -14,10 +14,7 @@ export class AnimeComponent implements OnInit {
     this.databaseSvc.getAll().subscribe((result:any)=>{
       this.databaseList = result;
       console.log(result);
-      console.log(2000000);
-    }
-    )
-
+    })
   }
 
   ngOnInit(): void {

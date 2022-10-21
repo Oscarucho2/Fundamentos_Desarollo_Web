@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Componentes/NAVBAR/navbar/navbar.component';
-
+import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from '../assets/Rutas/app.routes';
 import { HomeComponent } from './Componentes/Pages/Inicio/home/home.component';
 import { AboutComponent } from './Componentes/Pages/About/about/about.component';
@@ -30,7 +30,8 @@ import { VideojuegosComponent } from './Componentes/Pages/videojuegos/videojuego
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
